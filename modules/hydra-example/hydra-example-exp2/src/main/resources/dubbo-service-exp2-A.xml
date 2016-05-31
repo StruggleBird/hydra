@@ -13,10 +13,10 @@
     </bean>
     <!--服务暴露-开机-->
     <dubbo:protocol name="${All.protocol}" port="${A.port}"/>
-    <dubbo:service interface="com.jd.bdp.service.exp2.inter.InterfaceA" ref="serviceA">
+    <dubbo:service interface="com.jd.bdp.service.exp2.inter.InterfaceA" timeout="30000" ref="serviceA">
     </dubbo:service>
     <!--服务引用-->
-    <dubbo:reference id="referenceB" interface="com.jd.bdp.service.exp2.inter.InterfaceB" check="false">
+    <dubbo:reference id="referenceB" timeout="30000" interface="com.jd.bdp.service.exp2.inter.InterfaceB" check="false">
     </dubbo:reference>
 
 </beans>

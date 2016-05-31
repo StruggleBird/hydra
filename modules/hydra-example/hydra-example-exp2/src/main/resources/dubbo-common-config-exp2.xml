@@ -17,6 +17,6 @@
     <!--application配置-->
     <dubbo:application name="${dubbo.application.name}" owner="${dubbo.application.owner}"/>
     <!--registry配置-->
-    <dubbo:registry protocol="${dubbo.registry.protocol}" address="${dubbo.registry.address}"/>
+    <dubbo:registry protocol="${dubbo.registry.protocol}" address="${dubbo.registry.address}" timeout="30000"/>
     <!--服务关联关系-->
 </beans>

@@ -35,7 +35,7 @@ public class ServiceE implements InterfaceE {
         returnVoice = "(" + returnVoice + ")";
 //        if (mySwitch > 0){
             try {
-                Thread.sleep(1500);
+            Thread.sleep(10);
             } catch (InterruptedException e) {
                 e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
             }

@@ -22,10 +22,6 @@
         </dependency>
         <dependency>
             <groupId>com.jd.bdp</groupId>
-            <artifactId>hydra-hbase</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.jd.bdp</groupId>
             <artifactId>hydra-mysql</artifactId>
         </dependency>
         <dependency>

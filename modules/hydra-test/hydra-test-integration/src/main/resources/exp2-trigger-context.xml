@@ -22,6 +22,9 @@
        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
 	http://code.alibabatech.com/schema/dubbo
 	http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+	
+	<import resource="classpath*:hydra-config.xml"/>
+	
     <!--服务引用-->
     <dubbo:reference id="referenceA" interface="com.jd.bdp.service.exp2.inter.InterfaceA" check="false" retries="0">
     </dubbo:reference>
