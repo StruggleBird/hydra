@@ -17,7 +17,6 @@ package com.jd.bdp.hydra.dubbo;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.alibaba.dubbo.common.Constants;
 import com.alibaba.dubbo.common.extension.Activate;
@@ -157,11 +156,12 @@ public class HydraFilter implements Filter {
     }
 
     /*加载Filter的时候加载hydra配置上下文*/
-    static {
-        logger.info("Hydra filter is loading hydra-config file...");
-        String resourceName = "classpath*:hydra-config.xml";
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[] {resourceName});
-        logger.info("Hydra config context is starting,config file path is:" + resourceName);
-        context.start();
-    }
+    // static {
+    // logger.info("Hydra filter is loading hydra-config file...");
+    // String resourceName = "classpath*:hydra-config.xml";
+    // ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[]
+    // {resourceName});
+    // logger.info("Hydra config context is starting,config file path is:" + resourceName);
+    // context.start();
+    // }
 }
